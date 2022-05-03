@@ -1,0 +1,131 @@
+/* CSS RESET ----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saira', sans-serif;
+}
+:link, :visited {
+    text-decoration: none;
+    color: antiquewhite;
+}
+body {
+    background-color: rgb(29, 29, 29);
+}
+/* HEADER --------------------------------------*/
+.header {
+    background-color: rgb(29, 29, 29);
+    height: 250px;
+}
+.logo__title {
+    font-family: 'Ballet', cursive;
+    font-size: 60px;
+    color: antiquewhite;
+    text-align: center;
+
+}
+.logo__text {
+    color: antiquewhite;
+    text-align: center;
+}
+.nav {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+.nav__item {
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    font-size: 25px;
+    color: antiquewhite;
+}
+.nav__item:hover {
+    background: gray;
+    
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.nav__item:hover a {
+    text-decoration: none;
+    color: goldenrod;
+}
+/* MAIN -------------------------------------------*/
+main {
+    
+    width: 100%;
+    color: antiquewhite;
+    height:65vh;
+}
+section h2 {
+    text-align: center;
+}
+/* MAIN Home ---------------------------------------*/
+.mostrador {
+    text-align: center;
+}
+/*main .mhome {
+    background-image: url(img/anillo2.jpg);
+    background-size: cover; */
+}
+/* MAIN Historia ---------------------------------------*/
+.article {
+    margin: 30px;
+    padding: 15px;
+}
+.article h3 {
+    margin-bottom: 10px;
+}
+/* MAIN Store ---------------------------------------*/
+.card {
+    width: 80vw;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 15px;
+    ;
+}
+
+.card__img {
+    float: left;
+   
+}
+.card__img .imagen {
+    width: 23vw;
+}
+.card__description {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+.card__price p {
+    display: inline-block;
+    padding: 20px 70px 10px 0;
+
+    font-weight: 700;
+
+}
+/* MAIN Visitanos -----------------------------------*/
+.mapa {
+    text-align: center;
+}
+/* MAIN Contact -------------------------------------*/
+.form {
+    text-align: center;
+}
+/* FOOTER -------------------------------------------*/
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    height: 100px;
+}
+.footer__redes {
+    font-size: x-large;
+}
+.footer__copy {
+    font-size:large;
+    color: aqua;
+}

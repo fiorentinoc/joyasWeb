@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fiorentino | Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ballet&family=Saira&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Encabezado con Barra de navegacion --> 
-    <header>
-        <div>
-            <h1>Fiorentino</h1>
-            <p>Diseño de Alta Joyería</p>
+    <header class="header">
+        <div class="logo">
+            <h1 class="logo__title">Fiorentino</h1>
+            <p class="logo__text">Diseño de Alta Joyería</p>
         </div>
-        <nav>
+        <nav class="nav">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Historia</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="visitanos.html">Visítanos</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                <li class="nav__item"><a href="index.html">Inicio</a></li>
+                <li class="nav__item"><a href="about.html">Historia</a></li>
+                <li class="nav__item"><a href="store.html">Store</a></li>
+                <li class="nav__item"><a href="visitanos.html">Visítanos</a></li>
+                <li class="nav__item"><a href="contact.html">Contacto</a></li>
+                <li class="nav__item"><a href="blog.html">Blog</a></li>
             </ul>
         </nav>
     </header>
@@ -31,45 +35,48 @@
             <h2>Store</h2>
             <!--Anillos-->
             <section>
-                <article>
-                    <div>
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcloud10.todocoleccion.online%2Fjoyeria%2Ftc%2F2018%2F02%2F07%2F21%2F111817655.jpg&f=1&nofb=1" alt="anillo imperial" width="300">
+                <article class="card">
+                    <div class="card__img">
+                        <img class="imagen" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcloud10.todocoleccion.online%2Fjoyeria%2Ftc%2F2018%2F02%2F07%2F21%2F111817655.jpg&f=1&nofb=1" alt="anillo imperial">
                     </div>
-                    <div>
-                        <h3>Anillo Imperial</h3>
+                    <div class="card__description">
+                        <h3 class="card__title">Anillo Imperial</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, rem porro id distinctio exercitationem fugiat accusamus maxime neque corporis officia consequuntur quos libero magnam excepturi in a, error eaque incidunt!</p>
+                        <div class="card__price">
+                            <p>50 U$D</p>
+                            <button>Comprar</button>
+                        </div>
                     </div>
-                    <div>
-                        <p>50 USD</p>
-                        <button>Comprar</button>
-                    </div>
+                    
                 </article>
-                <article>
-                    <div>
-                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.edenly.com%2Fdiamant%2Fanillo-infinito-imperial-oro-rosa-oro-blanco-18-quilates-diamantes__7002823_1-z.jpg&f=1&nofb=1" alt="anillo zodiak" width="300">
+                <article class="card">
+                    <div class="card__img">
+                        <img class="imagen" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.edenly.com%2Fdiamant%2Fanillo-infinito-imperial-oro-rosa-oro-blanco-18-quilates-diamantes__7002823_1-z.jpg&f=1&nofb=1" alt="anillo imperial">
                     </div>
-                    <div>
-                        <h3>Anillo Zodiak</h3>
+                    <div class="card__description">
+                        <h3 class="card__title">Anillo Zodiak</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, rem porro id distinctio exercitationem fugiat accusamus maxime neque corporis officia consequuntur quos libero magnam excepturi in a, error eaque incidunt!</p>
+                        <div class="card__price">
+                            <p>45 U$D</p>
+                            <button>Comprar</button>
+                        </div>
                     </div>
-                    <div>
-                        <p>45 USD</p>
-                        <button>Comprar</button>
-                    </div>
+                    
                 </article>
+                
             </section>
             
         </section>
     </main>
     <!-- Pie de Página -->
     <footer>
-        <div>
-            <p>
+        <div class="footer">
+            <p class="footer__redes">
                 <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
                 <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
                 <a href="http://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
             </p>
-            <p>&copy; Fiorentino 2022</p>
+            <p class="footer__copy">&copy; Fiorentino 2022</p>
         </div>
 
     </footer>
