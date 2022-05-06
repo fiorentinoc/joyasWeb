@@ -56,7 +56,8 @@ main {
     
     width: 100%;
     color: antiquewhite;
-    height:65vh;
+    height: fit-content;
+    /*border: 3px solid red;*/
 }
 section h2 {
     text-align: center;
@@ -65,35 +66,37 @@ section h2 {
 .mostrador {
     text-align: center;
 }
-/*main .mhome {
-    background-image: url(img/anillo2.jpg);
-    background-size: cover; */
-}
-/* MAIN Historia ---------------------------------------*/
-.article {
-    margin: 30px;
-    padding: 15px;
-}
+
 .article h3 {
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
-/* MAIN Store ---------------------------------------*/
+/* MAIN Store & Historia-----------------------------*/
+.container {
+    width:fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 3px solid red;*/
+}
+
 .card {
-    width: 80vw;
+    width: 800px;
     margin: 20px;
     padding: 20px;
     text-align: center;
-    border: 4px solid white;
+    
     border-radius: 15px;
-    ;
+}
+.card__bdr {
+    border: 4px solid white;
 }
 
 .card__img {
     float: left;
-   
 }
-.card__img .imagen {
-    width: 23vw;
+.card__img > .imagen {
+    width: 300px;
+    border-radius: 8px;
 }
 .card__description {
     width: 100%;
@@ -112,9 +115,6 @@ section h2 {
     text-align: center;
 }
 /* MAIN Contact -------------------------------------*/
-.form {
-    text-align: center;
-}
 /* FOOTER -------------------------------------------*/
 .footer {
     text-align: center;
@@ -124,6 +124,9 @@ section h2 {
 }
 .footer__redes {
     font-size: x-large;
+}
+.footer__redes a {
+    padding: 20px;
 }
 .footer__copy {
     font-size:large;
