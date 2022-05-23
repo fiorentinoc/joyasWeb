@@ -1,0 +1,293 @@
+/* CSS RESET ----------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /*font-family: 'Saira', sans-serif;*/
+    font-family: 'Dosis', sans-serif;
+    color: antiquewhite;
+    background-color: rgb(29, 29, 29);
+
+}
+:link, :visited {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.card {
+    width: 100vw;
+    margin: 0px;
+    padding: 20px;
+    text-align:justify;
+    
+    border-radius: 15px;
+}
+/*________________________________________________________________
+VISTA MOBILE
+------------------------------------------------------------------*/
+@media screen and (max-width: 375px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 55px, 30px, 50px, 50px, 50px 80px;
+        grid-template-areas:
+        "area-1 area-1"
+            "area-2 area-2"
+            "area-3 area-3"
+            "area-4 area-4"
+            "area-5 area-5"
+            "area-6 area-6"
+        ;
+    }
+    .area-1 {
+        grid-area: area-1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-bottom: solid 2px rgb(111, 111, 111);
+    }
+    .area-2 {
+        grid-area: area-2;
+    }
+    .area-3 {
+        grid-area: area-3;
+        /*background-color: black;*/
+    }
+    .area-4 {
+        grid-area: area-4;
+    }
+    .area-5 {
+        grid-area: area-5;
+    }
+    .area-6 {
+        grid-area: area-6;
+        height: 100%;
+        
+    }
+    /* HEADER ------------------------------------*/
+    .logo {
+        padding-left: 10px;
+    }
+    .logo__title {
+        font-family: 'Ballet', cursive;
+        font-size: 30px;
+    }
+    .logo__text {
+        font-size: 10px;
+        position: relative;
+        top: -20px ;
+        text-align: right;
+    }
+    /* NAVIGATION BAR ------------------------------*/
+    .nav {
+        position: absolute;
+        top: 55px;
+        
+        display: flex;
+        justify-content: left;
+        background-color: rgb(60, 60, 60);
+        transform: translateX(-100%);
+        transition: all 0.3s;
+    }
+    
+    #btn-menu:checked ~ .nav{
+        transform: translateX(0%);
+    }
+    #btn-menu{
+        display: none;
+    }
+    .icon-menu {
+        padding: 20px;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav__item {
+        display: inline-block;
+        padding: 15px;
+        margin: 0px;
+        font-size: 16px;
+        border-bottom: 1px solid antiquewhite;
+        width: 100%;
+    }
+    .nav__item--active{
+        border-bottom: 2px solid antiquewhite ;
+        font-weight: 700;
+    }
+    .nav__item:hover {
+        font-weight: 700;
+        border-bottom: 2px solid goldenrod ;
+    }
+    .nav__item:hover a {
+        color: goldenrod;
+    }
+    /* MAIN HOME ------------------------------*/
+
+    .mostrador {
+        width: 100vw;
+        height: 70vh;
+        background-image: url(../img/anillo2.jpg);
+        background-size: 100vw auto;
+    }
+    
+    /* FOOTER -------------------------------------*/
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-top: solid 2px rgb(111, 111, 111);
+    }
+    .footer__redes a {
+        font-size: x-large;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        
+    }
+    .footer__copy {
+        font-size: small;
+        padding: 10px;
+        
+    }
+}    
+
+/*________________________________________________________________
+    VISTA TABLET-DESKTOP
+------------------------------------------------------------------*/
+@media screen and (min-width: 360px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 55px, 30px, 50px, 50px, 50px 80px;
+        grid-template-areas:
+            "area-1 area-1 area-1 area-1"
+            "area-2 area-2 area-4 area-4"
+            "area-2 area-2 area-4 area-4"
+            "area-5 area-5 area-3 area-3"
+            "area-5 area-5 area-3 area-3"
+            "area-6 area-6 area-6 area-6"
+        ;
+
+    }
+    .area-1 {
+        grid-area: area-1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: solid 2px rgb(111, 111, 111);
+    }
+    /* HEADER --------------------------------------*/
+    .header {
+        background-color: rgb(29, 29, 29);
+        height: 250px;
+    }
+    .logo {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo__title {
+        font-family: 'Ballet', cursive;
+        font-size: 60px;
+        color: antiquewhite;
+        text-align: center;
+
+    }
+    .logo__text {
+        color: antiquewhite;
+        text-align: right;
+        position: relative;
+        top: -35px;
+    }
+    #btn-menu{
+        display: none;
+    }
+    .icon-menu {
+        display: none;
+    }
+    .nav {
+        width: 100%;
+        text-align: center;
+        background-color: black;
+    }
+    .nav__item {
+        display: inline-block;
+        padding: 15px;
+        margin: 15px;
+        font-size: 20px;
+        color: antiquewhite;
+    }
+    .nav__item--active{
+        border-bottom: 2px solid antiquewhite ;
+    }
+    .nav__item:hover {
+        font-weight: 700;
+        border-bottom: 2px solid goldenrod ;
+    }
+    .nav__item:hover a {
+        color: goldenrod;
+    }
+    .area-2 {
+        grid-area: area-2;
+        display: flex;
+    }
+    .area-3 {
+        grid-area: area-3;
+        display: flex;
+        justify-content: center;
+    }
+    .mostrador {
+        width: 100vw;
+        height: 70vh;
+        background-image: url(../img/anillo2.jpg);
+        background-size: 100vw auto;
+    }
+    .area-4 {
+        grid-area: area-4;
+        background-image: url(../img/anillo2.jpg);
+        background-size: cover;
+        ;
+    }
+    .area-5 {
+        grid-area: area-5;
+        background-image: url(../img/anillo2.jpg);
+        background-size: cover;
+    }
+    .area-6 {
+        grid-area: area-6;
+        height: 100%;
+        display: flex;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-top: solid 2px rgb(111, 111, 111);
+    }
+    .footer__redes a {
+        font-size: x-large;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 10px;
+        
+    }
+    .footer__copy {
+        font-size: small;
+        padding: 10px;
+        
+    }
+}
